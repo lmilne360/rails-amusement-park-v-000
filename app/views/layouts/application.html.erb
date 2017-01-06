@@ -23,10 +23,18 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-           <!--  nav here -->
+           <%= render 'layouts/nav' %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+    </div>
+    <div class="message">
+      <%= render 'layouts/messages' %>
+    </div>
+
+     <div class="flash"  role="main">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p> 
     </div>
 
     <!-- content -->

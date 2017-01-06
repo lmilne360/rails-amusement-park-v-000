@@ -1,0 +1,8 @@
+<% if logged_in? %>
+	<li><%= link_to "Hello, #{current_user.name}!", user_path(current_user) %></li>
+	<li><%= link_to "See attractions", attractions_path %></li>
+	<li><%= link_to "Log Out", signout_path, method: :delete %></li>
+<% else %>
+	<li><%= link_to "Sign up", new_user_path %></li>
+	<li><%= link_to "Sign in", signin_path %></li>
+<% end %>
